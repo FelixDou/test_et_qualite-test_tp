@@ -13,3 +13,9 @@ class TestZone:
         assert b == [[" ", " ", " "],
                      [" ", " ", " "],
              [" ", " ", " "]]
+        
+    def test_sym(self):
+        s1, s2 = ttt.sym()
+        assert s1 == "X" or s1 == "O"
+        assert s2 == "X" or s2 == "O"
+        assert s1 != s2
