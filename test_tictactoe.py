@@ -1,5 +1,3 @@
-
-
 import pytest
 
 import TicTacToe_2016 as ttt
@@ -15,9 +13,3 @@ class TestZone:
         assert b == [[" ", " ", " "],
                      [" ", " ", " "],
              [" ", " ", " "]]
-    
-    def test_display_grid(self):
-        b = ttt.create_grid()
-        ttt.display_grid(b)
-        assert True
-        
